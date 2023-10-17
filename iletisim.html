@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <!-- ! Font Awesome İcon Link -->
+    <script src="https://kit.fontawesome.com/4da4258c6c.js" crossorigin="anonymous"></script>
+
+    <!-- ! AOS Script And Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ! Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- ! Title İcon -->
+    <link rel="shortcut icon" type="image/png" href="img/logo-ttle.png">
+
+    <!-- ! External Css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- ! menü başlangıç -->
+
+
+    <div class="menu_bar">
+        <div class="logo">
+             <img src="img/logoo.png" alt="">
+         </div>
+    <div id="menu" onclick="toggleMenuBar()" >
+        <ul >
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="kultur.html">Kültür</a></li>
+            <li><a href="tarih.html">Tarih</a></li>
+            <li><a href="turistik_yerler.html">Turistik Yerler</a></li>
+            <li><a class="active" href="iletisim.html">İletişim</a></li>
+        </ul>
+        <i class="fas fa-bars menu-icon" ></i>
+    </div>
+    </div>
+
+<!-- ? menü bitiş -->
+
+<!-- ! iletişim orta alan başlangıç -->
+
+    <div class="iletisim-ortaalan">
+        <div class="ic1" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="1000">
+            <div class="f-baslik">
+                <h3>BİZİMLE İLETİŞİME GEÇİN</h3>
+            </div>
+
+            <form>
+           
+                <fieldset>
+                <legend>İSTEK FORMU </legend>
+                <label>isim:</label>
+                <br>
+                <input type="text" name="" placeholder="Adınızı Giriniz" required>
+                <br>
+                <label >Soyad:</label>
+                <br>
+                <input type="text" name="" placeholder="Soyadınızı Giriniz" required>
+                <br>
+                <label>Tarih:</label>
+                <br>
+                <input type="date" name="" required>
+                <br>
+                <label>Saat:</label>
+                <br>
+                <input type="time" name="" required>
+                <br>
+                <br>
+                <label>İSTEKLERİNİZ BİZİM İÇİN KIYMETLİDİR.</label>
+                <br>
+                <br>
+                <textarea cols="30" rows="10" placeholder="İSTEĞİNİZİ BİLDİRİNİZ..." required></textarea>
+                <br>
+                <input type="Reset" class="btn" name="" value="SIFIRLA">
+                <input type="submit" class="btn" name="" value="GÖNDER">
+        
+                </fieldset>
+            </form>
+        </div>
+
+       <div class="ic2"> 
+        <div class="harita" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="1000" >
+            <div class="f-baslik">
+                <h3>KONUMUMUZ</h3>
+            </div>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.4805070916866!2d27.143056932492975!3d38.425173387777576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8e248cfbe7f%3A0xe6e10fc9440c9bb4!2zxLB6bWlyIELDvHnDvGvFn2VoaXIgQmVsZWRpeWVzaQ!5e0!3m2!1str!2str!4v1677515058756!5m2!1str!2str"  height="735" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    <div class="kültür-text">
+       
+    </div></div>
+
+      
+        
+    </div>
+
+
+<!-- ? iletişim orta alan bitiş -->
+
+<!-- ! footer başlangıç -->
+
+    <div class="footer">
+        <div class="f-baslik">
+            <h3>BİZİMLE İLETİŞİME GEÇİN</h3>
+        </div>
+
+        <div class="icerik1">
+            <div class="f-baslik">
+                <h3 class="line">SAYFALARIMIZ</h3>
+            </div>
+            <div class="f-baslik">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kultur.html">Kültür</a></li>
+                    <li><a href="tarih.html">Tarih</a></li>
+                    <li><a href="turistik_yerler.html">Turistik Yerler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+    
+        </div>
+
+        <div class="icerik2">
+     
+            <div class="f-baslik">
+                <h3 class="line">İLETİŞİM BİLGİLERİMİZ</h3>
+            </div>
+            <div class="f-baslik">
+            <ul>
+                <li>
+                    <a href="tel:153">
+                
+                    <i class="fa-solid fa-phone"></i>
+                    TEL : 153
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:02322933995">
+                        <i class="fa-solid fa-fax"></i>
+                        FAKS : 0232 293 39 95
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:02322931200">
+                        <i class="fa-solid fa-headset">                   </i>
+                        SANTRAL : 0232 293 12 00
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:him@izmir.bel.tr">
+                        <i class="fa-solid fa-envelope"></i>
+                        E-POSTA : him@izmir.bel.tr
+                    </a>
+                </li>
+            </ul>
+        </div>
+      
+        </div>
+        
+    
+        <div class="social">
+            <a href="https://www.facebook.com/izmirbuyuksehirbel">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+          
+            <a href="https://twitter.com/izmirbld">
+                <i class="fa-brands fa-square-twitter"></i>
+            </a>
+       
+           
+            <a href="https://www.instagram.com/izmirbuyuksehirbelediyesi/">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+           
+       
+            <a href="mailto:him@izmir.bel.tr">
+                <i class="fa-solid fa-envelope-square"></i>
+            </a>
+   
+        </div>
+    </div>
+
+<!-- ? footer bitiş -->
+
+
+
+
+    <!-- ! menu script -->
+    <script src="js/menu.js"></script>
+     <!-- ! Aos Script -->
+     <script>
+        AOS.init();
+    </script>
+</body>
+</html>

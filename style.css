@@ -1,0 +1,1250 @@
+
+
+/* Resetleme İşlemleri */
+*
+{
+    box-sizing: border-box;
+  
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* eklediğim divlerin alt alta gelmesi için.*/
+    align-items: center;
+    /* koyduğum bütün divleri ortaya alsın. */
+    overflow-x: hidden;
+}
+
+/* ****************** */
+/* ANASAYFA*/
+/* ****************** */
+
+/* MENÜ */
+/* GALERİ  */
+.hero-image {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/sidebar1.1.jpg");
+    width: 100%;
+    height: 730px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-image .hero-text
+    {
+        color: white;
+        font-size:30px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+        margin-top: 300px;
+        
+    }
+    .hero-text h4
+    {   text-align: center;
+        border-bottom: 1px solid white;
+        width: 50%;
+        margin: auto;
+    }
+    .hero-menu
+    {
+        margin-top: 10px;
+    }
+ 
+/* MENÜ */
+.menu_bar
+{
+    height: 100px;
+    width: 100%;
+    background-color:#D98D62;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 50px;
+    
+
+}
+.logo
+{
+ margin-top: 10px;
+}
+.logo img
+{
+    height: 80px;
+
+}
+
+#menu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 6px;
+    margin: 6px;
+
+}
+#menu a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 2s;
+}
+#menu li a:hover
+{
+    box-shadow: 1px 2px 20px black;
+    border-radius: 8px;
+    transform: scale(1.1);
+    background-color: #4BA47E;
+    
+}
+#menu li a.active
+{
+    box-shadow: 1px 2px 20px black;
+    border-radius: 8px;
+    transform: scale(1.1);
+    background-color: #4BA47E;
+}
+
+/* menü-bar kısmı */
+
+#menu i 
+{
+    display: none;
+}
+
+
+/* orta alan1*/
+.orta_alan1
+{
+    display: flex;
+    width:95%;
+    justify-content: space-around;
+}
+.orta_alan1 .icerik
+{
+    width: 45%;
+}
+.orta_alan1 .icerik img
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 2s;
+}
+.icerik img:hover
+{
+    box-shadow: 2px 3px 10px rgb(82, 140, 215);
+    border-radius:15px;
+    transform: scale(1.1);
+}
+.orta_alan1 .tanim
+{
+    width: 45%;
+}
+.orta_alan1 .tanim p
+{
+    text-align: justify;
+    margin-top: 30px;
+    text-shadow: 1px 1px 30px black;
+    font-size: 18px;
+}
+/* text slider */
+.text-slider
+{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+.text-slider .text-content
+{
+    width: 1000%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    overflow: hidden;
+}
+.text-slider  .text-content .text-item
+{
+    width: 90%;
+    padding: 20px;
+    position: relative;
+    animation-name:text;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    overflow: hidden;
+    
+}
+.text-slider  .text-content .text-item .text
+{
+    width: 90%;
+    background-color:#4BA47E;
+    height: 200px;
+    margin: auto;
+    box-shadow: 3px 6px 20px black;
+    border-radius: 15px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: 2s;
+    overflow: hidden;
+    
+}
+.text-slider  .text-content .text-item .text span
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    
+}
+.text-slider  .text-content .text-item .text p
+{
+
+    font-weight: bold;
+    color: white;
+    
+}
+.text-slider  .text-content .text-item .text:hover
+{
+ transform: scale(1.1);
+ cursor: pointer;
+}
+@keyframes text
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    10%
+    {
+        transform: translateX(0%);
+    }
+    20%
+    {
+        transform: translateX(-100%);
+        
+    }
+    30%
+    {
+        transform: translateX(-100%);
+        
+    }
+    40%
+    {
+        transform: translateX(-200%);
+        
+    }
+    50%
+    {
+        transform: translateX(-200%);
+        
+    }
+    60%
+    {
+        transform: translateX(-300%);
+    }
+    70%
+    {
+        transform: translateX(-300%);
+    }
+    80%
+    {
+        transform: translateX(-400%);
+    }
+    90%
+    {
+        transform: translateX(-400%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+    
+}
+
+
+
+
+
+/* ****************** */
+/* KÜLTÜR*/
+/* ****************** */
+.kültür-ortalan1
+{
+    display: flex;
+    width:95%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.kültür-ortalan1 .f-baslik
+{
+    width: 100%;
+}
+.kültür-ortalan1 .f-baslik h2
+{
+    text-transform: uppercase;
+    color:#4ba47e ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.kültür-ortalan1 .ic1 .f-baslik h3
+{
+    
+    margin-left: 35px;
+    color: #D98D62;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.kültür-ortalan1 .ic2
+{
+    display: flex;
+    justify-content: space-around;
+}
+.kültür-ortalan1 .Image 
+{
+    width: 45%;
+    
+}
+
+.kültür-ortalan1 .Image img
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 2s;
+}
+.kültür-ortalan1 .kültür-text 
+{
+    width: 45%;
+    
+}
+.kültür-ortalan1 .kültür-text p
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 2s;
+    text-shadow: 2px 2px 10px black;
+    text-align: justify;
+}
+.kültür-ortalan1 .kültür-text h3
+{
+    width: 100%;
+    color: #4BA47E;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 2s;
+
+}
+.kültür-ortalan1 .ic2 .kültür-text ul
+{
+    font-weight: bold;
+}
+.kültür-ortalan1 .ic2 .kültür-text  ul li
+{
+    list-style-type: none;
+}
+.kültür-ortalan1 .ic2 .kültür-text  ul li::before
+{
+    content:"\203A";
+    padding-right: 5px;
+    color: #D98D62;
+}
+/* ****************** */
+/* TARİH*/
+/* ****************** */
+ 
+
+.tarih-ortalan .f-baslik h2
+{
+    text-transform: uppercase;
+    color:#4ba47e ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarih-ortalan1
+{
+    
+    width: 100%;
+    height:auto;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+.tarih-ortalan1 video
+{
+    width: 90%;
+    height: auto;
+}
+
+
+
+.tarih-ortalan2
+{
+    display: flex;
+    width:95%;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.tarih-ortalan2 .ic2
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarih-ortalan2 .f-baslik h2
+{
+    text-transform: uppercase;
+    color:#4BA47E ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarih-ortalan2 .Image 
+{
+    width: 45%;
+    
+}
+
+.tarih-ortalan2 .Image img
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 2s;
+}
+.tarih-ortalan2 .tarih-text 
+{
+    width: 45%;
+
+   
+    
+}
+.tarih-ortalan2 .tarih-text p
+{
+
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.tarih-ortalan2 .Image img:hover
+{
+    box-shadow: 2px 3px 10px rgb(110, 115, 121);
+    border-radius:15px;
+    transform: scale(1.1);
+}
+
+/* ****************** */
+/* Turistik*/
+/* ****************** */
+.container-ic
+{
+    width: 100%;
+    height: auto; 
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 30px;
+  
+}
+
+.Image-container
+{
+    width: 100%;
+    height: auto; 
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.Image-content
+{
+    display: flex;
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+ 
+    
+}
+.Image-content .container-column-100
+{
+    width:95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 60px;
+}
+
+.Image-content .container-column-100 .container-column-50  {
+    width: 50%;
+    height: auto;
+    display: flex;
+    
+}
+
+
+.Image-content .container-column-100 .container-column-50 
+.Image-Item {
+    width: 100%;
+    height: 400px;
+    background-color: #4ba47e;
+    box-shadow: 3px 4px 10px #a5a5a5;
+    border-radius: 15px;
+    transition: 2s;
+    margin: 15px;
+
+}
+
+.Image-content .container-column-100 .container-column-50 .Image-Item:hover
+{
+
+    transform: scale(1.1);
+    margin: 10px;
+
+}
+.Image-content .container-column-100 .container-column-50 .Image-Item .Image-box
+{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.Image-content .container-column-100 .container-column-50 .Image-Item .Image-box img
+{
+    width:100%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    position: absolute;
+}
+.Image-content .container-column-100 .container-column-50  .Image-Item .text-box
+{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+}
+
+.Image-content .container-column-100 .container-column-50 .Image-Item .text-box p
+{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+/* ? Turistik_yerler Sayfası Bitiş */
+
+
+/* ****************** */
+/* İLETİŞİM*/
+/* ****************** */
+
+
+/* iletişim orta alan */
+.iletisim-ortaalan
+{
+    display: flex;
+    width:95%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: auto;
+}
+.iletisim-ortaalan .ic1
+{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.iletisim-ortaalan .ic1 .f-baslik h3
+{
+    color: #4BA47E;
+}
+.iletisim-ortaalan .ic1 form
+{
+    background-color: rgba(189, 189, 189,0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom:30px;
+    margin-top:30px;
+   
+}
+.iletisim-ortaalan .ic1 form fieldset
+{
+    border: 0px;
+}
+.iletisim-ortaalan .ic1 form legend
+{
+    font-size: 20px;
+    color: #4BA47E;
+    margin: auto;
+    padding-top: 10px;
+}
+.iletisim-ortaalan .ic1 form label
+{
+  text-transform: uppercase;
+  color: #4BA47E;
+  
+}
+.iletisim-ortaalan .ic1 form input
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+.iletisim-ortaalan .ic1 form .btn
+{
+    background-color: #D98D62;
+    margin-top: 10px;
+    
+}
+
+
+.iletisim-ortaalan .ic2
+{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.iletisim-ortaalan .ic2 .f-baslik h3
+{
+    color: #4ba47e;
+   
+}
+.iletisim-ortaalan .ic2 iframe
+{
+    width: 100%;
+    padding-top: 8px;
+    border-radius: 15px;
+    transition: 2s;
+
+}
+.iletisim-ortaalan .ic2 iframe:hover
+{
+    box-shadow: 2px 4px 20px gray;
+    transform: scale(0.9);
+}
+
+
+
+/* footer */
+
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* sığmadığı zaman alt satıra geçsin özelliği*/
+    width: 100%;
+    height: auto;
+    background-color: #D98D62;
+   
+}
+.footer .f-baslik
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer .f-baslik h3
+{
+    color: white;
+    font-family:cursive;
+    
+}
+.footer .f-baslik .line
+{
+    border-bottom: 1px solid #565656;
+    margin-bottom:5px;
+}
+/* içerik1 */
+.footer .icerik1
+{
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+        
+}
+.footer .icerik1 .f-baslik
+{
+    width: 100%;
+}
+
+.footer .icerik1 .f-baslik ul li
+{
+    list-style-type: none;
+    margin: 10px;
+    
+
+}
+.footer .icerik1 .f-baslik ul li a
+{
+    text-transform:uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 2s;
+}
+
+.footer .icerik1 .f-baslik ul li a:hover
+{
+    box-shadow: 2px 3px 20px black;
+    padding: 10px;
+    border-radius: 5px;
+    transform: scale(1.1);
+    background-color: #4BA47E;
+    
+
+}
+
+/* içerik2 */
+
+.footer .icerik2
+{
+    width: 50%;
+    padding: 10px;
+
+   
+}
+
+.footer .icerik2 .f-baslik
+{
+    width: 100%;
+}
+.footer .icerik2 .f-baslik ul li
+{
+    
+    list-style-type: none;
+}
+
+.footer .icerik2 .f-baslik a
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 2s;
+   
+    
+}
+
+.footer .icerik2 .f-baslik ul li a:hover
+{
+    box-shadow: 2px 3px 20px black;
+    padding: 10px;
+    border-radius: 5px;
+    transform: scale(1.1);
+    background-color: #4BA47E;
+}
+
+
+/* social */
+
+.footer .social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    border-top: 1px solid #565656;
+
+}
+.footer .social i
+{
+    margin: 15px;
+    transition: 2s;
+}
+.footer .social a
+{
+    color: black;
+}
+.footer .social i:hover
+{
+   
+   box-shadow: 2px 3px 20px black;
+   padding: 10px;
+   border-radius: 15px;
+   transform: scale(1.1);
+}
+.social a:nth-child(1):hover
+{
+    color:#0c84ed;
+    
+}
+.social a i:nth-child(1):hover
+{
+    background-color: white;
+    
+}
+.social a:nth-child(2):hover
+{
+    color:#1c9bf0;
+}
+.social a i:nth-child(2):hover
+{
+    background-color: white;
+    
+}
+.social a:nth-child(3):hover
+{
+    color:#bb267a;
+}
+.social a i:nth-child(3):hover
+{
+    background-color: white;
+    
+}
+.social a:nth-child(4):hover
+{
+    color:#e94135;
+}
+.social a i:nth-child(4):hover
+{
+    background-color: white;
+    
+}
+
+
+
+/* Responsive */
+
+/* ! Tablet */
+@media only screen and (max-width:992px)
+{
+
+     /* ****************** */
+    /* MENÜ*/
+    /* ****************** */
+
+    
+    /* menü responsive */
+    .hero-text h4
+    {
+        width: 50%;
+    }
+
+    /* ****************** */
+    /* ANASAYFA*/
+    /* ****************** */
+    .orta_alan1
+    {
+      display: flex;
+    }
+    .orta_alan1 .icerik
+    {
+        width: 80%;
+       
+    }
+    .orta_alan1 .icerik img
+    {
+        width: 90%;
+    }
+
+    .orta_alan1 .tanim
+    {
+        width: 80%;
+    }
+    .orta_alan1 .tanim p
+    {
+
+        width: 90%;
+    }
+    
+    /* ****************** */
+    /* KÜLTÜR*/
+    /* ****************** */
+    
+    .kültür-ortalan1 .ic1 .f-baslik h3
+    {
+    margin-left: 20px;
+    }
+    
+    /* ****************** */
+    /* TARİH*/
+    /* ****************** */
+    .container-ic
+    {    
+     margin-bottom: 30px;
+    }
+  
+    
+    /* ****************** */
+    /* TURİSTİK YERLER*/
+    /* ****************** */
+    .Image-content .container-column-100
+    {
+        display: block;
+        margin-left: 30px;
+    }
+    .Image-content .container-column-100 .container-column-50
+    {
+        width: 100%;
+       
+        
+    }
+    .Image-content .container-column-100 .container-column-50 .Image-Item
+    {
+        margin: 20px;
+        
+
+    }
+}
+
+
+
+/* ! mobile */
+@media only screen and (max-width:768px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    /* ****************** */
+    /* MENÜ*/
+    /* ****************** */
+
+    
+    /* menü responsive */
+    .hero-text h4
+    {
+        width: 70%;
+    }
+  
+    #menu_bar
+    {
+        justify-content: space-between;
+        position: relative;
+ 
+    }
+    #menu_bar .logo
+    {
+        margin-left: 5%;
+    }
+    #menu_bar #menu
+    {
+        margin-right: 5%;
+       
+      
+    }
+    
+    #menu ul
+    {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 20%;
+        width: 60%;
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        background: #D98D62 !important;
+        align-items: center;
+        justify-content:space-evenly;
+        border-radius: 15px;
+        padding-top: 20px;   
+ 
+
+    }
+    #menu ul li
+    {
+    border-bottom: 1px solid #565656;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    transform: translate(-10%,-50%);
+    text-align: center;
+    padding-bottom: 15px;
+    }
+
+    #menu i
+    {
+        display: none;
+        cursor: pointer;
+        font-size: 30px;
+        border: 1px solid black;
+        border-radius:15%;
+        padding: 5px;
+        margin-top: 50%;
+    }
+    #menu ul li a
+    {
+       font-size: 16px;
+    }
+    
+    /* ****************** */
+    /* ANASAYFA*/
+    /* ****************** */
+
+    /* orta alan responsive */
+    .orta_alan1
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left:45px;
+       
+    }
+    .orta_alan1 .icerik
+    {
+        width: 100%;
+       
+       
+    }
+    .orta_alan1 .tanim
+    {
+        width: 100%;
+        
+    }
+
+
+    /* text slider responsive */
+    .text-slider  .text-content .text-item .text
+    {
+        padding-top: 30px;
+    }
+    .text-slider  .text-content .text-item .text span
+    {
+        padding-bottom: 10px;
+    }
+
+
+    /* ****************** */
+    /* KÜLTÜR*/
+    /* ****************** */
+    /* kültür orta alan responsive */
+
+    .kültür-ortalan1 .ic
+    {
+        margin-top: 67%;
+    }
+    .kültür-ortalan1 .ic1 .f-baslik
+    {
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        font-size: 14px;
+
+    }
+    .kültür-ortalan1 .ic1 .f-baslik .f-baslik-ic
+    {
+        font-size: 16px;
+    }
+
+    .kültür-ortalan1 .ic2
+    {
+        flex-direction: column;
+    }
+    .kültür-ortalan1 .ic2 .Image
+    {
+        width: 100%;
+    }
+    .kültür-ortalan1 .ic2 .kültür-text
+    {
+        width: 100%;
+    } 
+   
+
+    /* ****************** */
+    /* TARİH*/
+    /* ****************** */
+
+
+   .tarih-ortalan
+   {
+    width: 100%;
+    margin-top: 61%;
+   }
+   
+   
+   .tarih-ortalan2 .ic2
+   {
+       flex-direction: column;
+       
+   }
+   .tarih-ortalan2 .ic2 .Image
+   {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+   }
+   .tarih-ortalan2 .Image img
+   {
+     width: 85%;
+     
+   }
+   .tarih-ortalan2 .ic2 .tarih-text
+   {
+       width: 100%;
+     
+   }
+   .tarih-ortalan2 .ic2 .tarih-text P
+  {
+    width: 85%;
+    margin: auto;
+  } 
+
+   
+
+    /* ****************** */
+    /* TURİSTİK YERLER*/
+    /* ****************** */
+
+    .container-ic
+    {
+     margin-top:-50%;
+   
+    }
+    .Image-content
+    {
+        margin-top: 60%;
+      
+    }
+
+   .Image-content .container-column-100 .container-column-50
+   {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    
+      
+   }
+   .Image-content .container-column-100 .container-column-50 .Image-Item
+   {
+       width: 90%;
+       margin: 20px;
+       
+
+   }
+
+
+
+    
+    /* ****************** */
+    /* İLETİŞİM*/
+    /* ****************** */
+
+    /* iletişim responsive */
+    
+    .iletisim-ortaalan
+    {
+        display: block;
+        margin-top: 65%;
+    }
+    .iletisim-ortaalan .ic1
+    {
+        width:90%;
+        margin: auto;
+    }
+   
+    .iletisim-ortaalan .ic1 .f-baslik h3
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .iletisim-ortaalan .ic2
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .iletisim-ortaalan .ic2 .f-baslik h3
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .iletisim-ortaalan .ic2 .harita iframe
+    {
+      margin-bottom: 30px;
+    }
+    
+    /* ****************** */
+    /* FOOTER*/
+    /* ****************** */
+
+    /* footer responsive */
+    .footer
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .icerik2 
+    {
+        width: 100%;
+    }
+
+
+}
+
+/* menünün bara tıkladığında sola gelmesini sağlaması için yani bulunduğu konuma ben bunu yukarıda 100% ile sakladım.*/
+/* #menu.active
+{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
